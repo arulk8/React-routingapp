@@ -6,7 +6,7 @@ import { createPosts } from "../actions";
 class PostNew extends Component {
   renderField(field) {
     const { meta } = field; // nested object destructuring
-    console.log(meta);
+    // console.log(meta);
     const className = `form-group ${
       meta.touched && meta.error ? "has-danger" : ""
     }`;

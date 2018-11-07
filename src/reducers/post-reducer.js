@@ -9,7 +9,7 @@ export default function(state = {}, action) {
     // return { ...state, [action.payload.data.id]: action.payload.data };// similar to above code;
 
     case FETCH_POSTS:
-      return _.mapKeys(action.payload.data, "id");
+      return _.mapKeys(action.payload.data, "id"); // lodash method which converts arry of object to object of objects
     default:
       return state;
   }

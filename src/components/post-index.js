@@ -10,16 +10,16 @@ class PostIndex extends Component {
   }
   renderPosts() {
     return _.map(this.props.posts, post => {
-      console.log("post", post);
+      // console.log("post", post);
       return (
         <li className="list-group-item" key={post.id}>
-          {post.title}
+          <Link to={`/posts/${post.id}`}>{post.title}</Link>
         </li>
       );
     });
   }
   render() {
-    console.log(this.props.posts);
+    //console.log(this.props.posts);
     return (
       <div>
         <div className="text-xs-right">
